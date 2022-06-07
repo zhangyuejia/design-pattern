@@ -4,9 +4,11 @@ import java.util.Map;
 
 /**
  * 变量解析器
+ * @author zhangyj
  */
 public class VarExpression extends Expression {
-    private String key;
+
+    private final String key;
 
     public VarExpression(String key) {
         this.key = key;

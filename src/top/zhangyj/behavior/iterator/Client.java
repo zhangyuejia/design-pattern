@@ -1,5 +1,9 @@
 package top.zhangyj.behavior.iterator;
 
+/**
+ * 行为型模式：迭代器模式
+ * @author zhangyj
+ */
 public class Client {
     public static void main(String[] args) {
         IAggregate<String> aggregate = new ConcreteAggregate<>();

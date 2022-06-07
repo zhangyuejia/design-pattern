@@ -5,5 +5,5 @@ public interface IAggregate<E> {
 
     void remove(E e);
 
-    Iterator iterator();
+    Iterator<E> iterator();
 }

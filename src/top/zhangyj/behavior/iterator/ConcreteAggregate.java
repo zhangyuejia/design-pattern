@@ -24,7 +24,7 @@ public class ConcreteAggregate<E> implements IAggregate<E>  {
     }
 
     @Override
-    public Iterator iterator() {
-        return new ConcreteIterator(this.vector);
+    public Iterator<E> iterator() {
+        return new ConcreteIterator<>(this.vector);
     }
 }

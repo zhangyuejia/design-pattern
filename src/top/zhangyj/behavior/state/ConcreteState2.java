@@ -2,14 +2,19 @@ package top.zhangyj.behavior.state;
 
 public class ConcreteState2 extends State {
 
-    @Override
-    public void hangdle1() {
-        super.context.setCurrentState(Context.STATE_1);
-        super.context.handle1();
+    protected final Context context;
+
+    protected ConcreteState2(Context context) {
+        this.context = context;
     }
 
     @Override
-    public void hangdle2() {
+    public void handle1() {
+        System.out.println("solving ConcreteState2 hangdle1()");
+    }
+
+    @Override
+    public void handle2() {
 
         System.out.println("solving ConcreteState2 hangdle2()");
     }
