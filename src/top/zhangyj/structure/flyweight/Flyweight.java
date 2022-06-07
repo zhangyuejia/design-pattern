@@ -1,4 +1,4 @@
-package top.zhangyj.constract.flyweight;
+package top.zhangyj.structure.flyweight;
 
 public abstract class Flyweight {
     //内部状态

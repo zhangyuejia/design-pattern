@@ -9,13 +9,14 @@ import java.util.Map;
  * 里氏替换原则
  */
 public class LSP {
-    @Test
-    public void testLSP(){
+
+    public static void main(String[] args) {
         Father son = new Son();
         Map m = new HashMap();
 //        下面报错，Father doSomething永远不会执行m
 //        ((Father)son).doSomething(m);
         //Father doSomething exec.
+        System.out.println("--------------------");
         ((Son) son).doSomething(m);
         //Father doSomething exec.
         son.doSomething1(m);
@@ -35,7 +36,7 @@ class Father{
     }
 
     public void doSomething1(Map map){
-        System.out.println("Father doSomething exec.");
+        System.out.println("Father doSomething1 exec.");
     }
 }
 class Son extends Father{
@@ -44,6 +45,6 @@ class Son extends Father{
     }
 
     public void doSomething1(HashMap map){
-        System.out.println("Son doSomething exec.");
+        System.out.println("Son doSomething1 exec.");
     }
 }

@@ -1,4 +1,4 @@
-package top.zhangyj.constract.flyweight;
+package top.zhangyj.structure.flyweight;
 
 import java.util.HashMap;
 import java.util.Map;

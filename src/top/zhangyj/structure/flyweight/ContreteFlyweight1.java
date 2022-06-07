@@ -1,4 +1,4 @@
-package top.zhangyj.constract.flyweight;
+package top.zhangyj.structure.flyweight;
 
 public class ContreteFlyweight1 extends Flyweight{
     protected ContreteFlyweight1(String entrinsic) {
