@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * 组合模式（安全模式，叶子节点和树枝节点结构不一样）
+ * 组合模式依据树形结构来组合对象
+ * @author zhangyj
  */
 public class Client {
     public static void main(String[] args) {

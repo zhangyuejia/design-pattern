@@ -1,6 +1,5 @@
 package top.zhangyj.structure.flyweight;
 
-import org.junit.Assert;
 
 /**
  * 结构型模式：享元模式
@@ -13,7 +12,10 @@ public class Client  {
         final String entrinsic = "mykey";
         Flyweight flyweight1 = FlyweightFactory.getFlyweight(entrinsic);
         Flyweight flyweight2 = FlyweightFactory.getFlyweight(entrinsic);
-        Assert.assertSame(flyweight1, flyweight2);
-        System.out.println("");
+        if(flyweight1 == flyweight2){
+            System.out.println("正确使用享元模式");
+        }else {
+            System.err.println("错误使用享元模式");
+        }
     }
 }
